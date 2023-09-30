@@ -26,8 +26,10 @@
 - 数据读取得到：`log_data.xlsx`；点图绘制得到：`point.jpg`点云图和`line.jpg`折线图；拟合函数得到：`polynomial_fit.jpg`
 - 点击打开输出文件，就可以打开`output`文件夹
 
+运行界面：
 <div align=center><img src="https://mzee-imge.oss-cn-shanghai.aliyuncs.com/images/202309302353362.png" alt="image-20230930235300290" style="zoom:80%;" /></div>
 
+output文件夹内容：
 <div align=center><img src="https://mzee-imge.oss-cn-shanghai.aliyuncs.com/images/202309302353906.png" alt="image-202309302353906" style="zoom:100%;" /></div>
 
 
