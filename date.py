@@ -23,7 +23,7 @@ wb = px.Workbook()
 ws = wb.active
 
 # 在Excel表格中添加表头
-ws['A1'] = 'filename(distance)'
+ws['A1'] = 'Distance'
 ws['B1'] = 'Power(mW)'
 
 # 循环处理每个日志文件

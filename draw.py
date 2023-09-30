@@ -21,7 +21,7 @@ y = df.iloc[:, 1]  # 第二列数据
 
 # 创建点图
 plt.figure(figsize=(10, 6), num="点图效果预览")
-plt.scatter(x, y, marker='o', label='date', color='c')
+plt.scatter(x, y, marker='o', label='date', color='c',s=15, alpha=0.8)
 
 # 设置标题和标签
 plt.title('point for distance and Power(mW)')

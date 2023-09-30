@@ -40,7 +40,7 @@ y_fit = polynomial(x_filtered)
 
 # 绘制原始数据的散点图
 plt.figure(figsize=(10, 6), num="拟合结果预览")
-plt.scatter(x_filtered, y_filtered, label="date", color='c')
+plt.scatter(x_filtered, y_filtered, label="date", color='c', marker='o', s=10, alpha=0.8)
 
 # 绘制折线图
 plt.plot(x, y, marker=',', linestyle='-', label='Line', linewidth=1)
@@ -48,7 +48,7 @@ plt.plot(x, y, marker=',', linestyle='-', label='Line', linewidth=1)
 # 绘制多项式拟合的函数曲线
 x_curve = np.linspace(min(x_filtered), max(x_filtered), 10000)  # 生成更多点以绘制平滑的曲线
 y_curve = polynomial(x_curve)
-plt.plot(x_curve, y_curve, label=f"polynomial-fit", color='red')
+plt.plot(x_curve, y_curve, label=f"polynomial-fit", color='red', linewidth=1.3)
 
 # 添加标签和图例
 plt.xlabel("distance")
@@ -65,7 +65,7 @@ coeffs = np.array(["+" + str(x) if x > 0 else str(x) for x in coeffs])
 # 使用Latex渲染输出拟合的多项式
 plt.text(0.03, 0.04,
          fr"$y={coeffs[0]}x^{8}{coeffs[1]}x^{7}{coeffs[2]}x^{6}{coeffs[3]}x^{5}{coeffs[4]}x^{4}{coeffs[5]}x^{3}{coeffs[6]}x^{2}{coeffs[7]}x{coeffs[8]}$",
-         transform=plt.gca().transAxes, color='red', fontsize=13, usetex=True)
+         transform=plt.gca().transAxes, color='r', fontsize=13, usetex=True)
 
 # 保存图形为.jpg文件
 plt.savefig("output/polynomial_fit.jpg", dpi=1000)
