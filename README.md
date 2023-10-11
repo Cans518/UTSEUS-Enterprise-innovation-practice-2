@@ -32,4 +32,7 @@
 output文件夹内容：
 <div align=center><img src="https://mzee-imge.oss-cn-shanghai.aliyuncs.com/images/202309302353906.png" alt="image-202309302353906" style="zoom:100%;" /></div>
 
+# V1.0 与 v2.0 区别
+- V1.0 是本人误操作数据的版本
+- V2.0 修正了数据读取的位置，优化了图片生成样式
 
